@@ -63,7 +63,7 @@ body {
 }
 
 body {
-    font-family: "Rubik";
+    font-family: 'Baloo 2', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -146,7 +146,6 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Martel";
     font-weight: 400;
     color: #333;
 }
@@ -253,16 +252,17 @@ a:after {
 }
 
 .wholescreen {
-	background: url(../assets/img/intro.jpg) no-repeat center top;
 	margin-top: 0;
 	padding-top: 0;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 600px;
-  height: 100vh;
+	/* min-height: 600px; */
+  height: 90vh;
 	width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -275,6 +275,11 @@ a:after {
     background-size: cover;
 }
 
+.wholescreen h1 {
+  font-size: 22px;
+  padding: 1.5em 0;
+}
+
 .centered {
   text-align: center;
 }
@@ -284,11 +289,11 @@ a:after {
 }
 
 .logo {
-  position: absolute;
+  /* position: absolute;
   top: 24px;
-  left: 24px;
-  height: 80px;
-  width: 80px;
+  left: 24px; */
+  height: 150px;
+  width: 150px;
 }
 
 footer, .footer {
@@ -298,6 +303,11 @@ footer, .footer {
   justify-content: space-between;
   padding: 20px;
   background-color: #222277;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer > *, .footer > * {
@@ -313,8 +323,12 @@ footer > *, .footer > * {
   .logo {
     top: 48px;
     left: 48px;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .wholescreen h1 {
+    font-size: 30px;
   }
 
   footer, .footer {
